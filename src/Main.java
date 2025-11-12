@@ -1,13 +1,11 @@
 public class Main {
     public static void main(String[] args) {
 
-        // Crear un alojamiento genérico
         Alojamiento alojamiento1 = new Alojamiento("Hostal Sol", 50.0, "Madrid");
         System.out.println(alojamiento1.toString());
         System.out.println("Precio total por 3 noches: " + alojamiento1.calcularPrecioPorNoche());
         System.out.println();
 
-        // Crear un hotel con todos los parámetros
         Hotel hotel1 = new Hotel("Gran Hotel", 120.0, "Barcelona", 5, true);
         hotel1.setDesayunoIncluido(false);
         System.out.println(hotel1.toString());
@@ -16,7 +14,6 @@ public class Main {
         System.out.println("Precio total por 3 noches: " + (hotel1.precioPorNoche() * 3));
         System.out.println();
 
-        // Crear un camping
         Camping camping1 = new Camping(5, 20, true);
         camping1.setNombre("Camping Verde");
         camping1.setCiudad("Granada");
